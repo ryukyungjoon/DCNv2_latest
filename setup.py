@@ -33,6 +33,7 @@ def get_extensions():
             "-D__CUDA_NO_HALF_OPERATORS__",
             "-D__CUDA_NO_HALF_CONVERSIONS__",
             "-D__CUDA_NO_HALF2_OPERATORS__",
+            "-arch=sm_61",
         ]
     else:
         # raise NotImplementedError('Cuda is not available')
@@ -54,7 +55,7 @@ def get_extensions():
 
 setup(
     name="DCNv2",
-    version="0.1",
+    version="0.1.1",
     author="charlesshang",
     url="https://github.com/charlesshang/DCNv2",
     description="deformable convolutional networks",
